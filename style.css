@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&display=swap');
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background-color: rgb(146, 4, 146);
+  color: white;
+  font-size: 3vw;
+  height: 5vw;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+.css-game{
+  display: flex;
+  justify-content: center;
+  height: 42vw;
+}
+
+.game-info{
+  display: flex;
+}
+
+.board{
+  margin-top: 5vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3,9.2vw);
+  grid-template-rows: repeat(3,9.2vw);
+  font-size: 7.65vw;
+}
+
+.box{
+  margin: 0;
+  padding: 0;
+  border-bottom: 0.3vw solid black;
+  border-right: 0.3vw solid black;
+  height: 9vw;
+  width: 9vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.box-text{
+  font-family:Arial, Helvetica, sans-serif;
+}
+.box:hover{
+  background-color: rgb(249, 235, 249);
+}
+
+.bl{
+  border-left: 0;
+}
+.br{
+  border-right: 0;
+}
+.bt{
+  border-top: 0;
+}
+.bb{
+  border-bottom: 0;
+}
+
+.welcome-text{
+  margin-left: 7vw;
+  margin-top: 4vw;
+}
+
+.reset-button{
+  font-size: 1.7vw;
+  padding: 0.5vw 1.5vw;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(146, 4, 146);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.reset-button:hover{
+  transition: 1s;
+  background-color: rgb(202, 82, 202);
+}
+
+.welcome-heading{
+  font-size: 2.3vw;
+  font-family: 'PT Sans', sans-serif;
+}
+.whoseTurn,
+.result{
+  font-size: 1.8vw;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.dance{
+  height: 0vw;
+  margin-left: 5vw;
+}
+.start-dance{
+  transition: height 1s ease-in-out;
+  height: 10vw;
+  margin-left: 5vw;
+}
+
+@media screen and (max-width: 900px)
+{
+  .whoseTurn{
+    font-size: 5vw;
+  }
+
+  nav{
+    font-size: 7vw;
+    height: 9vw;
+  }
+
+  .welcome-heading{
+    font-size: 5vw;
+    margin-left: 0vw;
+    margin-top: 7vw;
+  }
+  
+  .reset-button{
+    font-size: 4vw;
+    padding: 0.8vw 1.8vw;
+    
+  }
+  .board{
+    margin-left: 5vw;
+    margin-top: 10vw;
+    grid-template-columns: repeat(3,16vw);
+    grid-template-rows: repeat(3,16vw);
+    font-size: 6.5vw;
+  }
+  .box{
+    height: 15.7vw;
+    width: 15.8vw;
+  }
+
+  .css-game{
+    flex-wrap: wrap;
+  }
+
+  .result{
+    font-size: 5vw;
+  }
+  .css-game{
+    margin-top: 5vw;
+  }
+
+  .start-dance{
+    transition: height 1s ease-in-out;
+    height: 25vw;
+    margin-left: 5vw;
+  }
+  
+}
